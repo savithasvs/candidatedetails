@@ -1,0 +1,144 @@
+<html>
+
+  <head>
+    <title>Admin Page</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+    <link rel="icon" href="https://play-lh.googleusercontent.com/E5wrRW1UNjMFrVX6Q--cgGGgvCU9mFLEVpf0GFrAXvYGy7a1t2xY8rUYcuih4qy7vA=w144-h144-n-rw" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./admin.css">
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-light ">
+      <div class="container-fluid justify-content-around">
+        <img class="col-lg-1 im text-center ml-5 col-md-1 col-sm-1" src="./images/VMS.png" alt="logo">
+        <button class="btn btn-outline-success mt-3 mr-3 me-2" type="button" onclick="location.assign('/logout')">Log Out</button>
+      </div>
+    </nav>
+    <div class="d-flex justify-content-center">
+  <!-- <form action="/view" method="POST" id="form" > -->
+    <fieldset >
+      
+    <div class="container my-1 ">
+      <!-- <button class="btn btn-outline-success me-2" type="button" onclick="console.log('Login Clicked')">Logout</button> -->
+
+      
+      <form method="POST" action="/view">
+        <div class="d-flex justify-content-center text-center text-dark my-4">
+          <h3>Find Candidate Details By Date </h3>
+        </div>
+        <div class="row d-flex justify-content-center my-4">
+
+          <div class="col-xs xs col-sm-6 col-md-6 col-lg-6">
+            <label class="form-control">Start Date</label>
+          </div><!-- /col -->
+
+          <div class="col-xs xs col-sm-6 col-md-6 col-lg-6">
+            <input type="date" id="names" placeholder="mm/dd/yyyy" class="form-control" name="names" required>
+          </div><!-- /col -->
+
+        </div><!-- /row -->
+        <div></div>
+        <div class="row d-flex justify-content-center my-4">
+
+          <div class="col-xs xs col-sm-6 col-md-6 col-lg-6">
+            <label class="form-control ">End Date</label>
+          </div><!-- /col -->
+
+          <div class="col-xs xs col-sm-6 col-md-6 col-lg-6">
+            <input type="date" class="form-control" placeholder="mm/dd/yyyy" id="endate" name="enddate" required>
+          </div><!-- /col -->
+
+        </div><!-- /row -->
+
+        <div class="row d-flex justify-content-center my-4">
+
+          <div class="col-xs xs bt col-sm-3 col-md-3 col-lg-3">
+            <button type="reset" id="reset" class="btn btn-primary rounded-pill form-control">Reset</button>
+          </div><!-- /col -->
+
+          <div class="col-xs xs bt col-sm-3 col-md-3 col-lg-3">
+            <button type="submit" class="btn btn-primary rounded-pill form-control">Submit</button>
+          </div><!-- /col -->
+
+        </div>
+      </form><!-- /row -->
+
+
+      <div class="d-flex justify-content-center text-center text-dark my-4">
+        <h3>Find Candidate Details By Field </h3>
+      </div>
+      <div class="container mt-3">
+
+        <form method="POST">
+          <div class="input-group mt-3 mb-3 col-lg-5 col-md-8 col-sm-6">
+            <div class="input-group-prepend">
+
+              <select id="field" name="field" class="btn search-btn btn-primary dropdown-toggle form-control text-light "
+                required>
+                <option value="name">Search By</option>
+                <option value="name">Name</option>
+                <option value="degree">Degree</option>
+                <option value="department">Department</option>
+                <option value="college">College</option>
+                <option value="years"> Year Of Passing</option>
+                <option value="skills">Skills</option>
+                <option value="jobprofile">Job Profile</option>
+                <option value="location">Location</option>
+                <option value="portfolio">Portfolio</option>
+              </select>
+            </div>
+            <input id="search" class="form-control col-lg-4" type="text" name="search" placeholder="Search" required>
+
+            <div class="input-group-append">
+              <button class="btn btn-primary form-control btn-lg" type="submit"
+                onclick=" javascript:form.action='/admin';"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- <div class="row d-flex justify-content-center my-4">
+      <div class="col-md-4 col-lg-10">
+        <label class="form-control "><span  class="text-danger fw-bold"></span>
+        </label>
+      </div>    
+    </div> -->
+
+      <div class="row d-flex justify-content-center text-center  my-5">
+        <div class="col-xs col-sm-12 col-md-12 col-lg-12 text-dark">
+          <h3> To<span class="text-primary fw-bold"> Download All</span> Candidate Details Click Below <i
+              class="fas fa-hand-point-down text-Warning"></i> </h3>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center my-8">
+        <div class="col-xs xs bt col-sm-4 col-md-4 col-lg-4 mb-5">
+          <a href="/exportuser" class="btn btn-primary rounded-pill form-control "> <i
+              class="fa fa-download text-light "></i> Click me </a>
+        </div>
+      </div>
+
+  </fieldset>
+  </div>
+    
+   
+
+</body>
+
+<script src="./admin.js"></script>
+
+
+</html>

@@ -1,0 +1,289 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://play-lh.googleusercontent.com/E5wrRW1UNjMFrVX6Q--cgGGgvCU9mFLEVpf0GFrAXvYGy7a1t2xY8rUYcuih4qy7vA=w144-h144-n-rw" /> 
+  <!-- <meta http-equiv = "refresh" content = "10; url = https://www.virtualmaze.com" /> -->
+
+  <!--Bootsrap 4 CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Fontawesome CDN-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Career Page | Login !!</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Numans');
+
+    html,
+    body {
+      /* background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); */
+      /* background-image: url('https://unsplash.com/photos/zEqkUMiMxMI'); */
+      background-image: url('./images/vmsbg.jpg');
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      font-family: 'Numans', sans-serif;
+    }
+
+    .container {
+      height: 80%;
+      align-content: center;
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      height: 300px;
+      /* margin-top: auto;
+      margin-bottom: auto; */
+      width: 400px;
+      background-color: rgba(0, 0, 0, 0.342) !important;
+    }
+
+    /* .social_icon span {
+      font-size: 60px;
+      margin-left: 10px;
+      color: #FFC312;
+    }
+
+    .social_icon span:hover {
+      color: white;
+      cursor: pointer;
+    } */
+
+    .card-header h3 {
+      color: white;
+    }
+
+    /* .social_icon {
+      position: absolute;
+      right: 20px;
+      top: -45px;
+    } */
+
+    .input-group-prepend span {
+      width: 3rem;
+      background-color:rgb(91, 192, 222);
+      color: black;
+      border: 0 !important;
+    }
+
+    input:focus {
+      outline: 0 0 0 0 !important;
+      box-shadow: 0 0 0 0 !important;
+
+    }
+
+    .remember {
+      color: white;
+    }
+
+    .remember input {
+      width: 20%;
+      height: 20%;
+      margin-left: 15px;
+      margin-right: 5px;
+    }
+
+    .login_btn {
+      color: black;
+      background-color: rgb(91, 192, 222);
+      width: 50%;
+    }
+
+
+    .login_btn:hover {
+      color: black;
+      background-color: white;
+    }
+
+    .links {
+      color: white;
+    }
+
+    .links a {
+      margin-left: 4px;
+    }
+
+  @media(max-width:577px) {
+    .col-xs {
+      width: 80%;
+      text-align: center;
+    }
+    body{
+      background-size: cover;
+      height: 100%;
+    }
+
+    .xs {
+      padding: 8px;
+    }
+
+    .im {
+      width: 35%;
+    }
+
+    .bt {
+      width: 60%;
+    }
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light ">
+    <div class="container-fluid justify-content-end">
+    <img class="col-lg-2 im col-md-3 col-sm-3 btn" href="./"
+    src="./images/VMS.png" alt="logo" onclick="location.assign(`https:\\www.virtualmaze.com/`);">
+    <!-- <button class="btn btn-outline-success me-2" type="button" onclick="console.log('Login Clicked')">Sign Up</button> -->
+    </div>
+  </nav>
+  <form action="/signup" class="form form-signin container-fluid justify-content-end">
+    <div class="container ">
+      
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="card ">
+          <div class="card-header">
+            <h3 class="">Sign In</h3>
+            <!-- <div class="d-flex justify-content-end social_icon">
+              <span><i class="fab fa-facebook-square"></i></span>
+              <span><i class="fab fa-google-plus-square"></i></span>
+              <span><i class="fab fa-twitter-square"></i></span>
+            </div> -->
+          </div>
+          <div class="card-body text-center align-items-center justify-content-center">
+            <form action="/signup" class="form-signin">
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-envelope ml-1"></i></span>
+                </div>
+                
+                <!-- E-Mail Field -->
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
+
+              <!-- E-Mail Error Block -->
+              <div class="email error"></div>
+              
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-key ml-1"></i></span>
+                </div>
+                
+                <!-- Password Field -->
+                <input type="password" name="password" class="form-control" placeholder="password" required>
+              </div>
+              
+              <!-- Password Error Block -->
+              <div class="password error"></div>
+              <!-- <div class="row align-items-center remember">
+                <input type="checkbox">Remember Me
+              </div> -->
+              <div class="form-group my-3">
+                <!-- Login Button -->
+                <input type="Submit" name="Submit" value="Login" class="btn float-right login_btn">
+                <!-- <button class="btn  btn-primary " name="Submit" value="Login" type="Submit">Login</button> -->
+              </div>
+            </form>
+        </div>
+        <!-- <div class="card-footer my-3">
+          <div class="d-flex justify-content-center links">
+            Don't have an account?<a href="./signup" class="text-warning">Sign Up</a>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="#">Forgot your password?</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.querySelector('form');
+    const emailError = document.querySelector('.email.error');
+    const passwordError = document.querySelector('.password.error');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // reset errors
+      emailError.textContent = '';
+      passwordError.textContent = '';
+      // get values
+      const email = form.email.value;
+      const password = form.password.value;
+      try {
+        const res = await fetch('/login', {
+          method: 'POST',
+          body: JSON.stringify({ email, password }),
+          headers: { 'Content-Type': 'application/json' }
+        });
+        const data = await res.json();
+        console.log(data);
+        if (data.errors) {
+          emailError.textContent = data.errors.email;
+          passwordError.textContent = data.errors.password;
+        }
+        if (data.user) {
+          location.assign('/admin');
+        }
+      }
+      catch (err) {
+        console.log(err);
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+<div class="d-flex justify-content-center ">
+  <img class="col-lg-2 col-md-3 col-sm-3 " src="http://career-page-vms.herokuapp.com/images/VMS.png" alt="logo">
+</div>
+<div class="container">
+  <div class="wrapper">
+    <form action="/signup" class="form-signin">
+      <h2 class="form-signin-heading"> Welcome! Please Login</h2>
+     <label class="test-primary" for="email">Email</label>
+      <input type="text" name="email" required />
+      <div class="email error">some error</div>
+      <label for="password">Password</label>
+      <input type="password" name="password" required />
+      <div class="password error"></div>
+      <button>login</button> 
+      <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
+      <div class="email error"></div>
+      <input type="password" class="form-control mt-3" name="password" placeholder="Password" required="" />
+      <div class="password error"></div>
+      <div class="d-flex justify-content-center">
+        <button class="btn  btn-primary " name="Submit" value="Login" type="Submit">Login</button>
+      </div>
+
+    </form>
+  </div>
+
+</div> -->

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Career Page</title>
+  <link rel="icon" href="https://play-lh.googleusercontent.com/E5wrRW1UNjMFrVX6Q--cgGGgvCU9mFLEVpf0GFrAXvYGy7a1t2xY8rUYcuih4qy7vA=w144-h144-n-rw" />
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+ <!---- <script src="https://www.google.com/recaptcha/api.js"></script>
+  <link rel="stylesheet" href="./index.css"/>-->
+
+
+</head>
+
+<body class="bg-light">
+
+  <form id="form" name="form" method="POST" enctype="multipart/form-data" action="/" onsubmit="return validateRecaptcha();">
+
+    <div class="container my-1">
+        <div class="row d-flex justify-content-center my-1"
+        <div class=" col-sm-4 xs col-md-4 col-lg-4 "> 
+        <div class="d-flex justify-content-center text-center my-1">
+            <h3>
+                <p>ABC College of Engineering<br>CBE,TN<br><span class="text-danger">STUDENTS DETAILS</span></p>
+            </h3>          
+        </div>
+        <div class="row">
+            <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
+                <label class="required"></label>
+                <input id="numbers" style="text-transform: capitalize" placeholder="Register Number" class="req form-control required" id="register_number" name="register_number" required> 
+            </div> <!-- /col -->
+            
+        
+                <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
+                    <label class="required"></label>
+                    <input id="text" style="text-transform: capitalize" placeholder="Student Name" class="req form-control required" id="Student_Name" name="Student_Name" required> 
+                </div><!-- /col -->
+        
+
+            
+            <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
+                <label for="start"></label> 
+              <!--- <input id="text" style="text-transform: capitalize" >-->
+                 <input type="date" name="begin" aria-placeholder="date of birth"
+            
+                    placeholder="date of birth" value="  "
+            
+                    min="1997-01-01" max="2020-12-31" class="req form-control required" id="date" name="date" required> 
+            </div><!-- /col -->
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+                <label class="required"></label>
+                <select id="Gender" name="Gender" default=Gender required class="form-control">
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                    
+                </select>
+            </div><!-- /col -->
+
+            <div class="col-sm-4 xs col-md-4 col-lg-4 req">
+                <label class="required"></label>
+                <input type="email" placeholder="E-Mail Address" class="form-control" id="email" name="email" required>
+            </div><!-- /col -->
+
+            <!-- <div class="col-sm-4 xs text-center col-md-4 col-lg-4"> -->
+            <div class="col-sm-4 xs col-md-4  col-lg-4 ">         
+                <label class="required"></label>
+                 <input type="tel" pattern="[0-9]{10}" placeholder="Mobile Number " class="form-control" id="mobile" name="mobile" required> 
+              <!----  <input id="mobile" class="form-control mt-4" type="tel" name="mobile" class="form-control" required/>-->
+            </div><!-- /col -->
+        </div>
+        <div class="row">
+            
+                <div class="col-sm-4 xs col-md-4 col-lg-4">
+                    <label class="required"></label>
+                    <input type="number" step="0.01" min="0" max="100" id="sslc" name="sslc" class="form-control" placeholder="10th(%)" required>
+                </div><!-- /col -->
+
+                <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+                    <label class="required"></label>
+                    <select id=" sslc_Board" name="sslc_Board" default= board required class="form-control">
+                        <option value="" disabled selected>10th Board</option>
+                        <option value="state Board">state Board</option>
+                        <option value="CBSE">CBSE</option>
+                        <option value="Matric">Matric</option>
+                        
+                    </select>
+                </div><!-- /col --> <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+                    <label class="required"></label>
+                    <select id="sslc_medium" name="sslc_medium" default= board required class="form-control">
+                        <option value="" disabled selected>10th medium</option>
+                        <option value="English">English</option>
+                        <option value="Tamil">Tamil</option>
+                        
+                    </select>
+                </div><!-- /col --> 
+        </div> 
+        <div class="row">
+                <div class="col-sm-4 xs col-md-4 col-lg-4 req">
+                    <label class="required"></label>
+                    <input type="year" placeholder="10th year of passing" class="form-control" id="sslc_year" name=" sslc_year" required>
+                </div><!-- /col -->
+
+                
+                    <div class="col-sm-4 xs col-md-4 col-lg-4">
+                        <label class="required"></label>
+                        <input type="number" step="0.01" min="0" max="100" id="hsc" name="hsc" class="form-control" placeholder="12th %" required>
+                    </div><!-- /col -->
+
+                    <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+                        <label class="required"></label>
+                        <select id="hsc_Board" name="hsc_Board" default= board required class="form-control">
+                            <option value="" disabled selected>12th Board</option>
+                            <option value="state Board">state Board</option>
+                            <option value="CBSE">CBSE</option>
+                            <option value="Matric">Matric</option>
+                            
+                        </select>
+                    </div><!-- /col -->
+                </div>  
+        <div class="row">
+             <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+                <label class="required"></label>
+                <select id="hsc_medium" name=" hsc_medium" default= board required class="form-control">
+                    <option value="" disabled selected>12th medium</option>
+                    <option value="English">English</option>
+                    <option value="Tamil">Tamil</option>   
+                </select>
+            </div><!-- /col --> 
+            <div class="col-sm-4 xs col-md-4 col-lg-4 req">
+                <label class="required"></label>
+                <input type="year" placeholder="12th year of passing" class="form-control" id="year of passing" name="hsc_year" required>
+            </div><!-- /col -->
+        
+        <!---- <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+            <label class="required"></label>
+            <select id="12th cutoff" name="12th cutoff" default= degree required class="form-control">
+                <option value="" disabled selected>12th cutoff</option>
+                <option value="180">180</option>
+                <option value="179.5">179.5</option>
+                <option value="145.67">145.67</option>   
+            </select>
+           </div> /col -->
+           <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
+            <label class="required"></label>
+            <input id="numbers" style="text-transform: capitalize" placeholder="12th cut off" class="req form-control required" id="hsc_cutoff" name="hsc_cutoff" required> 
+        </div><!-- /col -->
+        </div>  
+        <div class="row">
+            <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+              <label class="required"></label>
+                <select id="degree" name="degree" default= degree required class="form-control">
+                   <option value="" disabled selected>Degree</option>
+                   <option value="BE">BE</option>
+                   <option value="B.Tech">B.Tech</option>  
+                </select>
+            </div><!-- /col --> 
+            <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+                <label class="required"></label>
+                  <select id="Branch" name="Branch" default= branch required class="form-control">
+                     <option value="" disabled selected> Branch </option>
+                     <option value="CSE">CSE</option>
+                     <option value="IT">IT</option>
+                     <option value="EEE">EEE</option>   
+                     <option value="ECE">ECE</option>
+                     <option value="MECH">MECH</option>
+                     <option value="CIVIL">CIVIL</option> 
+                  </select>
+           </div><!-- /col -->
+           
+            <div class="col-sm-4 xs col-md-4 col-lg-4">
+                <label class="required"></label>
+                 <input type="number" min="0" max="10" step="0.01" class="form-control" id="cgpa" name="cgpa" placeholder="CGPA" required>
+            </div><!-- /col -->
+        </div> 
+        <div class="row">
+     
+            <div class="col-sm-3 xs col-md-3 col-lg-3">
+                 <label class="required"></label>
+                   <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_1" name="sem_1" placeholder="sem 1 (%)" required>
+            </div><!-- /col -->
+             
+            <div class="col-sm-3 xs col-md-3 col-lg-3">
+                <label class="required"></label>
+                   <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_2" name="sem_2" placeholder="sem 2 (%)" required>
+            </div><!-- /col -->
+
+            <div class="col-sm-3 xs col-md-3 col-lg-3">
+                <label class="required"></label>
+                   <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_3" name="sem_3" placeholder="sem 3 (%)" required>
+             </div><!-- /col -->
+           <div class="col-sm-3 xs col-md-3 col-lg-3">
+                <label class="required"></label>
+                 <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_4" name="sem_4" placeholder="sem 4 (%)" required>
+           </div><!-- /col -->
+        </div>
+        <div class="row">
+     
+            <div class="col-sm-3 xs col-md-3 col-lg-3">
+                 <label class="required"></label>
+                   <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_5" name="sem_5" placeholder="sem 5(%)" required>
+            </div><!-- /col -->
+             
+            <div class="col-sm-3 xs col-md-3 col-lg-3">
+                <label class="required"></label>
+                   <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_6" name="sem_6" placeholder="sem 6 (%)" required>
+            </div><!-- /col -->
+
+            <div class="col-sm-3 xs col-md-3 col-lg-3">
+                <label class="required"></label>
+                   <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_7" name="sem_7" placeholder="sem 7 (%)" required>
+             </div><!-- /col -->
+            <div class="col-sm-3 xs col-md-3 col-lg-3">
+                <label class="required"></label>
+                 <input type="number" min="0" max="100" step="0.1" class="form-control" id="sem_8" name="sem_8" placeholder="sem 8 (%)" required>
+           </div><!-- /col -->
+        </div>
+        <div class="row">
+           <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+               <label class="required"></label>
+                  <select id="history_of_arreas" name="history_of_arreas" default=history required class="form-control">
+                      <option value="" disabled selected>Any History of Arrears</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                       <option value="2">2</option>
+                   </select>
+           </div><!-- /col -->
+           <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+             <label class="required"></label>
+                <select id="current_backbogs" name="current_backbogs"  required class="form-control">
+                  <option value="" disabled selected>No of current backbogs</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                   <option  value="2">2</option>
+                 </select>
+           </div><!-- /col -->
+        
+            <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
+              <label class="required"></label>
+               <input id="text" style="text-transform: capitalize" placeholder="Father's Name" class="req form-control required" id="Father_name" name=" Father_name" required> 
+            </div><!-- /col -->
+        </div>
+     <div class="row">
+        <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+           <label class="required"></label>
+               <select id="Fathers_qualification" name="Fathers_qualification"  required class="form-control">
+                  <option value="" disabled selected>Fathers qualification </option>
+                  <option value="B.sc">B.sc</option>
+                  <option value="B.Tech">B.Tech</option>
+                  <option value="M.sc">M.sc</option>    
+               </select>
+        </div><!-- /col -->
+        <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+           <label class="required"></label>
+              <select id="Fathers_occupation" name="Fathers_occupation"  required class="form-control">
+                 <option value="" disabled selected>Fathers occupation</option>
+                 <option value="Farmer">Farmer</option>
+                 <option value="clerk">clerk</option>
+                 <option value="Manager">Manager</option>    
+               </select>
+        </div><!-- /col -->
+        <div class="col-sm-4 xs col-md-4  col-lg-4 ">         
+            <label class="required"></label>
+              <input type="tel" pattern="[0-9]{10}" placeholder="Father's Mobile Number " class="form-control" id="Fathers_mobile" name="Fathers_mobile" required> 
+               <!---- <input id="mobile" class="form-control mt-4" type="tel" name="mobile" class="form-control" required/>-->
+        </div><!-- /col -->
+    </div>
+    <div class="row">
+        <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
+            <label class="required"></label>
+            <input id="text" style="text-transform: capitalize" placeholder="Mother's Name" class="req form-control required" id="Mother_name" name="Mother_name" required> 
+        </div><!-- /col -->
+
+         <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+           <label class="required"></label>
+              <select id="Mother_qualification" name="Mother_qualification"  required class="form-control">
+                <option value="" disabled selected>Mother's qualification </option>
+                <option value="B.sc">B.sc</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.sc">M.sc</option>    
+             </select>
+        </div><!-- /col -->
+
+        <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
+           <label class="required"></label>
+              <select id="Mother_occupation" name="Mother_occupation"  required class="form-control">
+                  <option value="" disabled selected>Mothers occupation</option>
+                  <option value="House Wife">House Wife</option>
+                  <option value="clerk">Clerk</option>
+                  <option value="Manager">Manager</option>    
+               </select>
+        </div><!-- /col -->
+    </div>
+    <div class="row">
+        <div class="col-sm-4 xs col-md-4  col-lg-4 ">         
+            <label class="required"></label>
+               <input type="tel" pattern="[0-9]{10}" placeholder="Mother's  Number " class="form-control" id="mother_mobile" name="mother_mobile" required> 
+               <!-- <input id="mobile" class="form-control mt-4 " type="tel" name="mobile" class="form-control" required/> -->
+        </div><!-- /col -->
+        <div class="col-sm-4 xs col-md-4  col-lg-4 ">         
+            <label class="required"></label>
+             <input type="tel" pattern="[0-9]{10}" placeholder=" Landline" class="form-control" id="landline" name="landline" required> 
+             <!-- <input id="Landline" class="form-control mt-4 " type="tel" name="Landline" class="form-control" required/> -->
+        </div><!-- /col 
+           <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </div><!-- /col -->
+         <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
+             <label class="required"></label>
+             <input id="text" style="text-transform: capitalize" placeholder="Address" class="req form-control required" id="Address" name="Address" required> 
+        </div><!-- /col -->
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-6 xs req col-md-6 col-lg-6 ">
+                <label class="required"></label>
+                <input id="text" style="text-transform: capitalize" placeholder="District" class="req form-control required" id="district" name="district" required> 
+         </div><!-- /col -->
+
+                
+         <div class="col-sm-6 xs req col-md-6 col-lg-6">
+                 <label class="required"></label>
+                 <input type="number" pattern="[0-9]{11}" placeholder=" Pincode" class="form-control" id="pincode" name="pincode" required> 
+            <!-- <input id="Pincode" class="form-control mt-4" type="tel" name="Pincoe" class="form-control" required/> -->
+         </div><!-- /col -->
+    </div> 
+    </div> 
+
+
+    
+     
+        <!-- 7TH Row -->
+        <div class="row d-flex justify-content-center align-items-center text-center my-3">
+            <div class="col-sm-4 xs col-md-4 col-lg-2">
+            <button type="submit" name ="submit" id="submit" value="Submit" class="btn bt btn-primary rounded-pill"> Submit </button>
+            </div>
+            <div class="col-sm-4 xs col-md-4 col-lg-2">
+            <button type="reset" name ="reset" id="reset" value="Reset" class="btn bt btn-primary rounded-pill"> Clear </button>
+            </div>
+        </div>
+    
+    </div><!-- /container -->
+  </form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+
+</html>

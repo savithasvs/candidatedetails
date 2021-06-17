@@ -1,0 +1,101 @@
+@media(max-width:577px){
+  .xs{
+    width:80%;
+    padding: 3px;
+  }
+  .im{
+    width:20%;
+    padding: 0 2px;
+  }
+  .bt{
+    width: 60%;
+    padding:5px;
+  }
+  .bx{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+}
+  
+@media(max-width:992px){
+  .bx{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+  } 
+  
+}
+
+  .required:before{
+    content: '*';
+    color:red;
+  }
+  
+
+  .containerSkills {
+      display: inline-block;        
+      max-width:420px;
+      overflow: auto;
+           
+  }
+
+
+  .skills {
+      /* border: 2px solid lightskyblue; */
+      /* padding: 10px; */
+      /* border-radius: 45px; */
+      display: flex;
+      line-height: 20px;
+      /* block-overflow: [clip | ellipsis | ];
+      max-lines: [];  */
+      resize:none ;
+      overflow: visible;
+      /* overflow: auto; */
+        
+  }
+
+  .skills .tag {
+      padding: .1rem 1rem;
+      border: 1px solid lightblue;
+      margin: 5px;
+      /* display: flex; */
+      align-items: center;
+      border-radius: 10px;
+      background: white;
+      cursor: default;
+  }
+
+  .skills .tag:hover {
+      background: rgb(27, 174, 223);
+  }
+
+  .tag i {
+      font-size: 16px;
+      margin-left: 5px; 
+  }
+
+  .skills input {
+      /* flex: 1; */
+      display: block;
+      /* font-size: 16px; */
+      font-size: 1rem;
+      /* padding: 5px; */
+      width: 400px;
+      outline: none;
+      border: 0; 
+      resize:none;  
+  }
+  
+
+  .material-icons {
+      padding-bottom: .1rem;
+      padding-left: .5rem;
+  }
+
+  .material-icons :hover {
+      color: red;
+      cursor: pointer;
+  }
