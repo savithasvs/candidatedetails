@@ -30,7 +30,7 @@ app.set('view engine', 'ejs');
 
     
 // routes for internal pages
-app.get('/', (_, res) => res.sendFile(__dirname + '/html/index.html'));
+app.get('/', (_, res) => res.sendFile(__dirname + '/html/final.html'));
 app.get('/success', (_, res) => res.sendFile(__dirname + '/html/Success.html'));
 app.get('*', checkUser);
 app.get('/admin', requireAuth , (_, res) => res.sendFile(__dirname + '/html/admin.html'));

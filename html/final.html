@@ -21,17 +21,17 @@
 
 <body class="bg-light">
 
-  <form id="form" name="form" method="POST" enctype="multipart/form-data" action="/" onsubmit="return validateRecaptcha();">
+  <form id="form" name="form" method="POST" action="/" >
 
     <div class="container my-1">
-        <div class="row d-flex justify-content-center my-1"
+         <div class="row d-flex justify-content-center my-1"> 
         <div class=" col-sm-4 xs col-md-4 col-lg-4 "> 
-        <div class="d-flex justify-content-center text-center my-1">
             <h3>
                 <p>ABC College of Engineering<br>CBE,TN<br><span class="text-danger">STUDENTS DETAILS</span></p>
             </h3>          
         </div>
         <div class="row">
+           <!-- <div class="d-flex justify-content-center text-center my-1"> -->
             <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
                 <label class="required"></label>
                 <input id="numbers" style="text-transform: capitalize" placeholder="Register Number" class="req form-control required" id="register_number" name="register_number" required> 
@@ -48,11 +48,8 @@
             <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
                 <label for="start"></label> 
               <!--- <input id="text" style="text-transform: capitalize" >-->
-                 <input type="date" name="begin" aria-placeholder="date of birth"
-            
-                    placeholder="date of birth" value="  "
-            
-                    min="1997-01-01" max="2020-12-31" class="req form-control required" id="date" name="date" required> 
+                 <input type="date"  aria-placeholder="date of birth" placeholder="date of birth"    
+                min="1997-01-01" max="2020-12-31" class="req form-control required" id="dob" name="dob" required> 
             </div><!-- /col -->
         </div>
         
@@ -74,7 +71,7 @@
             </div><!-- /col -->
 
             <!-- <div class="col-sm-4 xs text-center col-md-4 col-lg-4"> -->
-            <div class="col-sm-4 xs col-md-4  col-lg-4 ">         
+            <div class="col-sm-4 xs col-md-4  col-lg-4 ">      
                 <label class="required"></label>
                  <input type="tel" pattern="[0-9]{10}" placeholder="Mobile Number " class="form-control" id="mobile" name="mobile" required> 
               <!----  <input id="mobile" class="form-control mt-4" type="tel" name="mobile" class="form-control" required/>-->
@@ -109,7 +106,7 @@
         <div class="row">
                 <div class="col-sm-4 xs col-md-4 col-lg-4 req">
                     <label class="required"></label>
-                    <input type="year" placeholder="10th year of passing" class="form-control" id="sslc_year" name=" sslc_year" required>
+                    <input type="year" placeholder="10th year of passing" class="form-control" id="sslc_year" name="sslc_year" required>
                 </div><!-- /col -->
 
                 
@@ -132,7 +129,7 @@
         <div class="row">
              <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
                 <label class="required"></label>
-                <select id="hsc_medium" name=" hsc_medium" default= board required class="form-control">
+                <select id="hsc_medium" name="hsc_medium" default= board required class="form-control">
                     <option value="" disabled selected>12th medium</option>
                     <option value="English">English</option>
                     <option value="Tamil">Tamil</option>   
@@ -248,7 +245,7 @@
         
             <div class="col-sm-4 xs req col-md-4 col-lg-4 ">
               <label class="required"></label>
-               <input id="text" style="text-transform: capitalize" placeholder="Father's Name" class="req form-control required" id="Father_name" name=" Father_name" required> 
+               <input id="text" style="text-transform: capitalize" placeholder="Father's Name" class="req form-control required" id="Fathers_name" name="Fathers_name" required> 
             </div><!-- /col -->
         </div>
      <div class="row">
@@ -294,7 +291,7 @@
 
         <div class="col-sm-4 xs col-sm-4  col-lg-4 req">
            <label class="required"></label>
-              <select id="Mother_occupation" name="Mother_occupation"  required class="form-control">
+              <select id="Mothers_occupation" name="Mothers_occupation"  required class="form-control">
                   <option value="" disabled selected>Mothers occupation</option>
                   <option value="House Wife">House Wife</option>
                   <option value="clerk">Clerk</option>
@@ -329,7 +326,7 @@
                 
          <div class="col-sm-6 xs req col-md-6 col-lg-6">
                  <label class="required"></label>
-                 <input type="number" pattern="[0-9]{11}" placeholder=" Pincode" class="form-control" id="pincode" name="pincode" required> 
+                 <input type="number" pattern="[0-9]{6}" placeholder=" Pincode" class="form-control" id="pincode" name="pincode" required> 
             <!-- <input id="Pincode" class="form-control mt-4" type="tel" name="Pincoe" class="form-control" required/> -->
          </div><!-- /col -->
     </div> 

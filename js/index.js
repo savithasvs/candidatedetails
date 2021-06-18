@@ -161,35 +161,35 @@ function getIp(callback) {
       .then((resp) => callback(resp.country));
   }
 
-  const phoneInputField = document.querySelector("#mobile");
+  //const phoneInputField = document.querySelector("#mobile");
 
   //const phoneInput = window.intlTelInput(phoneInputField, {
-   // initialCountry: "auto",
+   /// initialCountry: "auto",
     // separateDialCode: true,
    // preferredCountries: ["in", "us", "lk", "bt", "bd"],
-   // geoIpLookup: getIp,
+  // geoIpLookup: getIp,
    // utilsScript:
-    //  "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",customContainer: "w-100"
- // });
+     // "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",customContainer: "w-100"
+  //});
 
 
- // document.getElementById("mobile").addEventListener("change", process, false);
+ //document.getElementById("mobile").addEventListener("change", process, false);
 
- //function process() {
+ // function process() {
 
-   // if (phoneInput.isValidNumber()) {
+    ///if (phoneInput.isValidNumber()) {
      // console.log("Success");
      // const phoneNumber = phoneInput.getNumber();
      // document.getElementById('mobile').value = phoneNumber;
       
     //}
-    //else {
-     // console.log("Error");
-     // document.getElementById('mobile').value = ""
+   // else {
+      //console.log("Error");
+      //document.getElementById('mobile').value = ""
    // }
    // console.log(document.getElementById("mobile").value);
 
- // }
+// }
   const tagContainer = document.getElementById('skills');
 const input = document.getElementById('myInput');
 
